@@ -4,6 +4,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@300;400;500;700&family=Roboto+Mono:wght@400;700&display=swap');
 
+.div_row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div_column {
+    display: flex;
+    flex-direction: column;
+}
+
 .main_background {
     background: linear-gradient(115.67deg, #EDC1D3 7.14%, #91BDEC 99.42%);
     display: flex;
@@ -16,6 +26,16 @@
     width: 1277px;
     display: flex;
     justify-content: space-between;
+}
+
+.money_svg {
+    width: 25px;
+    height: 29px;
+}
+
+.visa_svg {
+    width: 50px;
+    height: 22px;
 }
 
 .content_zone {
@@ -33,12 +53,13 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-content: flex-end;
     padding: 0px 237px 0px 88px;
 }
 
 .content {
     width: 1374px;
-    height: 825px;
+    height: 700px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -50,10 +71,45 @@
     color: #90A0B7;
 }
 
-.credit_card_main {
-    width: 844px;
-    height: 545px;
-    background-color: purple;
+.payment_main {
+    width: 765px;
+    height: 559px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row_size {
+    height: 60px;
+}
+
+.payments {
+    width: 772px;
+    height: 274px;
+    border: 1px solid #000000;
+}
+
+.payment_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_color {
+    width: 364px;
+    height: 239px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background: linear-gradient(to bottom right, #2C17E5, #AE08CA, #DB035E);
+}
+
+.card_white {
+    width: 364px;
+    height: 239px;
+    border-radius: 20px;
+    border: 1px solid #D8D8D8;
 }
 
 .payment_detail {
@@ -283,4 +339,157 @@
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
+}
+
+.number_color {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 10px
+}
+
+.numbers_color {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.card_chip {
+    width: 37px;
+    height: 28px;
+    border-radius: 16px;
+}
+
+.name_color {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 14px;
+    color: black;
+}
+
+.end_date_color {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 6px;
+    text-transform: uppercase;
+}
+
+.date_color {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.recent_payment {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    height: 34px;
+}
+
+.payment {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.dot_color1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: linear-gradient(133.9deg, rgba(243, 71, 122, 0.2) 0.24%, rgba(136, 76, 178, 0.2) 95.04%);
+    padding: 2.5px;
+}
+
+.dot_color2 {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: linear-gradient(133.9deg, rgba(243, 71, 122, 0.7) 0.24%, rgba(136, 76, 178, 0.7) 95.04%);
+}
+
+.recent_info {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.payment_color {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #F2994A;
+}
+
+.refund_color {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #3A91C1;
+}
+
+.credit_color {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #5A4C79;
+}
+
+.payment_dot1 {
+    border: 0.5px solid #F2994AB2;
+}
+
+.refund_dot1 {
+    border: 0.5px solid #3A91C1B2;
+}
+
+.credit_dot1 {
+    border: 0.5px solid #5A4C79;
+}
+
+.payment_dot2 {
+    background-color: #F2994AB2;
+}
+
+.refund_dot2 {
+    background-color: #3A91C1B2;
+}
+
+.credit_dot2 {
+    background-color: #5A4C79;
+}
+
+.dot1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dot2{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+.date{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #5C626D;
+}
+.payment_row{
+    border-top: 0.5px solid #E0E0E0;
+    align-items: center;
+}
+.money_green{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #219653;
+}
+.money_red{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #EB5757;
 }

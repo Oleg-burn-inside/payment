@@ -1,90 +1,220 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body class="main_background">
+  <body class="main_background">
     <div class="content_zone">
-        <header class="header">
+      <header class="header">
+        <div>
+          <img
+            style="width: 15px; height: 15px"
+            src="search.svg"
+            alt="search"
+          />
+          <input
+            class="input"
+            type="text"
+            placeholder="Search for any training you want"
+          />
+        </div>
+        <div style="display: flex">
+          <img
+            style="width: 16px; height: 20px"
+            src="notification.svg"
+            alt="notification"
+          />
+          <div class="omen_2">
+            <img class="omen_img_2" src="omen_main.jpg" alt="" />
+          </div>
+        </div>
+      </header>
+      <div class="content_tags">
+        <p class="content_tag">Your Credit Card</p>
+        <p class="content_tag">Payment Detail</p>
+      </div>
+      <div class="content">
+        <div class="payment_main">
+          <div class="cards">
+            <div class="card_color">
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  padding: 25px 40px 0px 32px;
+                "
+              >
+                <img
+                  class="money_svg"
+                  src="money_icon.svg"
+                  alt="money_icon"
+                  preserveAspectRatio="none"
+                />
+                <img
+                  class="visa_svg"
+                  style="width: 50px; height: 22px"
+                  src="visa.svg"
+                  alt="visa"
+                  preserveAspectRatio=""
+                />
+              </div>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  height: 120px;
+                  align-items: center;
+                  padding: 0px 45px 0px 34px;
+                "
+              >
+                <div class="div_column">
+                  <p class="text number_color">Number</p>
+                  <p class="text numbers_color">**** **** 222 0034</p>
+                </div>
+                <img class="card_chip" src="card_chip.png" alt="card_chip" />
+              </div>
+              <div style="border-top: 0.5px solid black">
+                <div class="div_row" style="padding: 15px 48px 0px 34px">
+                  <p class="text name_color">Craig S.</p>
+                  <div class="div_column">
+                    <p class="text end_date_color">End Date</p>
+                    <p class="text date_color">09/25</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card_white">
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  padding: 25px 40px 0px 32px;
+                "
+              >
+                <img
+                  class="money_svg"
+                  src="money_icon.svg"
+                  alt="money_icon"
+                  preserveAspectRatio="none"
+                />
+                <img
+                  class="visa_svg"
+                  style="width: 50px; height: 22px"
+                  src="visa.svg"
+                  alt="visa"
+                  preserveAspectRatio=""
+                />
+              </div>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  height: 120px;
+                  align-items: center;
+                  padding: 0px 45px 0px 34px;
+                "
+              >
+                <div class="div_column">
+                  <p class="text number_color" style="color: #41477A;">Number</p>
+                  <p class="text numbers_color" style="color: #41477A;">**** **** 002 0329</p>
+                </div>
+                <img class="card_chip" src="card_chip.png" alt="card_chip" />
+              </div>
+              <div style="border-top: 0.5px solid #D8D8D8">
+                <div class="div_row" style="padding: 15px 48px 0px 34px">
+                  <p class="text name_color" style="color: #41477A;">Craig S.</p>
+                  <div class="div_column">
+                    <p class="text end_date_color" style="color: #41477A;">End Date</p>
+                    <p class="text date_color" style="color: #41477A;">09/20</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="div_column">
+            <p class="text recent_payment">Recent Payment</p>
+            <div class="div_column">
+              <article class="div_row payment_row row_size"><div class="dot_color1"><div class="dot_color2"></div></div><p class="recent_info">Charge Back</p>          <div class="div_row"><div class="text dot1 payment_dot1"><div class="text dot2 payment_dot2"></div></div> <p class="payment_color">Payment</p></div> <p class="date">Mar 20, 2021</p><p class="money_red">-$140,20</p><button>...</button></article>
+              <article class="div_row payment_row row_size"><div class="dot_color1"><div class="dot_color2"></div></div><p class="recent_info">Information Reqested</p> <div class="div_row"><div class="text dot1 refund_dot1"><div class="text dot2 refund_dot2"></div></div>   <p class="refund_color">Refund</p></div>   <p class="date">Mar 20, 2021</p><p class="money_green">+$40,20</p> <button>...</button></article>
+              <article class="div_row payment_row row_size"><div class="dot_color1"><div class="dot_color2"></div></div><p class="recent_info">Settled</p>              <div class="div_row"><div class="text dot1 payment_dot1"><div class="text dot2 payment_dot2"></div></div> <p class="payment_color">Payment</p></div> <p class="date">Mar 20, 2021</p><p class="money_red">-$74,70</p> <button>...</button></article>
+              <article class="div_row payment_row row_size"><div class="dot_color1"><div class="dot_color2"></div></div><p class="recent_info">Authorised</p>           <div class="div_row"><div class="text dot1 credit_dot1"><div class="text dot2 credit_dot2"></div></div>   <p class="credit_color">Credit</p></div>   <p class="date">Mar 19, 2021</p><p class="money_red">-$1,20</p>  <button>...</button></article>
+            </div>
+          </div>
+        </div>
+        <div class="payment_detail">
+          <div class="personal_info personal_info_1">
             <div>
-                <img style="width: 15px; height: 15px;" src="search.svg" alt="search">
-                <input class="input" type="text" placeholder="Search for any training you want">
+              <div class="omen_1">
+                <img class="omen_img_1" src="omen.jpg" alt="omen)" />
+              </div>
             </div>
-            <div style="display:flex;">
-                <img style="width: 16px; height: 20px;" src="notification.svg" alt="notification">
-                <div class="omen_2"><img class="omen_img_2" src="omen_main.jpg" alt=""></div>
+            <h6 class="text adison">Adison Rosser</h6>
+            <p class="text date">Mar 20, 2021</p>
+          </div>
+          <div class="personal_info personal_info_2">
+            <p class="text due">Amount Due</p>
+            <h4 class="text money">$250.00</h4>
+            <p class="text visa">Visa $250.00</p>
+          </div>
+          <div class="personal_info personal_info_3">
+            <p class="text billing">Billing Plan</p>
+            <p class="text company">Company Start</p>
+            <div class="personal_info_details">
+              <pre
+                class="text gray_dude"
+              ><ion-icon name="information-circle-outline"></ion-icon>     5 team members ($8 / Month each)</pre>
+              <p class="text gray_dude gray_dude_list">
+                &middot; 100 GB Extra storage ($25.00)
+              </p>
+              <p class="text gray_dude gray_dude_list">
+                &middot; 8 extra hours ($2 / hour)
+              </p>
             </div>
-        </header>
-        <div class="content_tags">
-            <p class="content_tag">Your Credit Card</p>
-            <p class="content_tag">Payment Detail</p>
+          </div>
+          <div class="personal_info personal_info_4">
+            <div class="text pr_info_4">
+              <p class="text info_tag">Billing Plan</p>
+              <p class="text info_main">
+                275 New North<br />
+                Road, London
+              </p>
+            </div>
+            <div class="text pr_info_4">
+              <p class="text info_tag">Invoice Number</p>
+              <p class="text info_main">49682</p>
+            </div>
+            <div class="text pr_info_4">
+              <p class="text info_tag">Due Date</p>
+              <p class="text info_main">15 March, 2020</p>
+            </div>
+          </div>
+          <div class="personal_info personal_info_5">
+            <div class="calc">
+              <div class="pr_info_5 subtotal">
+                <p class="text info_tag">Subtotal:</p>
+                <p class="text info_main">$250.00</p>
+              </div>
+              <div class="pr_info_5">
+                <p class="text info_tag">Tax:</p>
+                <p class="text info_main">$25.00</p>
+              </div>
+            </div>
+            <div class="pr_info_5">
+              <p class="text info_tag">Amount Due (USD):</p>
+              <p class="text info_main">$275.00</p>
+            </div>
+          </div>
         </div>
-        <div class="content">
-            <div class="credit_card_main">
-                <div class="card_paint">
-                </div>
-                <div class="card_white">
-                </div>
-            </div>
-            <div class="payment_detail">
-                <div class="personal_info personal_info_1">
-                    <div>
-                        <div class="omen_1"><img class="omen_img_1" src="omen.jpg" alt="omen)"></div>
-                    </div>
-                    <h6 class="text adison">Adison Rosser</h6>
-                    <p class=" text date">Mar 20, 2021</p>
-                </div>
-                <div class="personal_info personal_info_2">
-                    <p class="text due">Amount Due</p>
-                    <h4 class="text money">$250.00</h4>
-                    <p class="text visa">Visa $250.00</p>
-                </div>
-                <div class="personal_info personal_info_3">
-                    <p class="text billing">Billing Plan</p>
-                    <p class="text company">Company Start</p>
-                    <div class="personal_info_details">
-                        <pre class="text gray_dude"><ion-icon name="information-circle-outline"></ion-icon>     5 team members ($8 / Month each)</pre>
-                        <p class="text gray_dude gray_dude_list">&middot; 100 GB Extra storage ($25.00)</p>
-                        <p class="text gray_dude gray_dude_list">&middot; 8 extra hours ($2 / hour)</p>
-                    </div>
-                </div>
-                <div class="personal_info personal_info_4">
-                    <div class="text pr_info_4">
-                        <p class="text info_tag">Billing Plan</p>
-                        <p class="text info_main">275 New North<br> Road, London</p>
-                    </div>
-                    <div class="text pr_info_4">
-                        <p class="text info_tag">Invoice Number</p>
-                        <p class="text info_main">49682</p>
-                    </div>
-                    <div class="text pr_info_4">
-                        <p class="text info_tag">Due Date</p>
-                        <p class="text info_main">15 March, 2020</p>
-                    </div>
-                </div>
-                <div class="personal_info personal_info_5">
-                    <div class="calc">
-                        <div class="pr_info_5 subtotal">
-                            <p class="text info_tag">Subtotal:</p>
-                            <p class="text info_main">$250.00</p>
-                        </div>
-                        <div class="pr_info_5">
-                            <p class="text info_tag">Tax:</p>
-                            <p class="text info_main">$25.00</p>
-                        </div>
-                    </div>
-                    <div class="pr_info_5">
-                        <p class="text info_tag">Amount Due (USD):</p>
-                        <p class="text info_main">$275.00</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
